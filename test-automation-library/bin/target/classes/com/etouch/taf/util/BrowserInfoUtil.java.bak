@@ -1,0 +1,70 @@
+package com.etouch.taf.util;
+
+import com.etouch.taf.core.BrowserType;
+import com.etouch.taf.core.TestBed;
+
+/**
+ * This enum class checks on browser type.
+ * 
+ * @author eTouch Systems Corporation
+ *
+ */
+public enum BrowserInfoUtil {
+	INSTANCE;
+	
+	/**
+	 * check the current test is running on IE or non-IE browsers
+	 * 
+	 * @return return true if it's a IE browser test, else it will return false
+	 */
+	public boolean isIE() {
+		return TestBed.INSTANCE.getProfile().getBrowser().toUpperCase().contains("IE");
+	}
+
+	/**
+	 * check the current test is running on IE or non-IE browsers
+	 * 
+	 * @return return true if it's a IE browser test, else it will return false
+	 */
+	public boolean isIE8() {
+		return BrowserType.IE8.getBrowser().equalsIgnoreCase(TestBed.INSTANCE.getProfile().getBrowser());
+	}
+
+	/**
+	 * check the current test is running on IE or non-IE browsers
+	 * 
+	 * @return return true if it's a IE browser test, else it will return false
+	 */
+	public boolean isIE9() {
+		return BrowserType.IE9.getBrowser().equalsIgnoreCase(TestBed.INSTANCE.getProfile().getBrowser());
+	}
+
+	/**
+	 * check the current test is running on IE or non-IE browsers
+	 * 
+	 * @return return true if it's a IE browser test, else it will return false
+	 */
+	public boolean isFF() {
+		return BrowserType.Firefox.getBrowser().equalsIgnoreCase(TestBed.INSTANCE.getProfile().getBrowser());
+	}
+
+	/**
+	 * check the current test is running on IE or non-IE browsers
+	 * 
+	 * @return return true if it's a IE browser test, else it will return false
+	 */
+	public boolean isChrome() {
+		return BrowserType.Chrome.getBrowser().equalsIgnoreCase(TestBed.INSTANCE.getProfile().getBrowser());
+	}
+
+	/**
+	 * check the current test is running on Safari or non-Safari browsers
+	 * 
+	 * @return return true if it's a Safari browser test, else it will return false
+	 */
+	public boolean isSafari() {
+		return BrowserType.Firefox.getBrowser().equalsIgnoreCase(TestBed.INSTANCE.getProfile().getBrowser());
+	}
+	
+}
+

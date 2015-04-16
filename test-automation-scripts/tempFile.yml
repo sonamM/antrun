@@ -1,0 +1,51 @@
+testTypes: [Web, Mobile]
+defectTool: Rally
+
+webConfig:
+ hub: localhost
+ port: 4001
+ URL: http://stg1.foxsports.com
+ tool: Selenium
+ currentTestBeds: [FF,IE10,Chrome10]
+
+ testBeds:
+ #FireFox TestBed
+ - browserName: FF
+   browserVer: 24
+   OS: Windows1
+   OSVer: 81
+ #IE10 TestBed
+ - browserName: IE
+   browserVer: 10
+   OS: Windows2
+   OSVer: 82
+   driver: C:\....
+ #Chrome TestBed
+ - browserName: Chrome
+   browserVer: 10
+   OS: Windows2
+   OSVer: 82
+   driver: C:\....
+ #Safari TestBed
+ - browserName: Safari
+   browserVer: 10
+   OS: Windows2
+   OSVer: 82
+   driver: C:\...
+   
+   
+mobileConfig:
+ hub: localhost
+ port: 4001
+ tool: Appium
+ currentTestBeds: [ Android]
+ 
+ testBeds:
+  #ios TestBed
+ - deviceName: iOS
+   appActivity: C:\
+   
+ #Android TestBed
+ - deviceName: Android
+   appActivity: C:\
+   appPackage: com.etouch

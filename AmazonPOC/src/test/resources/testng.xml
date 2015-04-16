@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="IHS Web POC" parallel="false">
+	<parameter name="testBedName" value="Firefox" />
+	<listeners>
+		<listener class-name="com.etouch.ihs.common.listener.SuiteListener" />
+	</listeners>
+	
+	<test name="Wells Canada Test">
+		<classes>
+			    <class name="com.etouch.amazon.pages.test.TestAmazonMainPage" /> 
+		</classes>
+	</test>  
+	</suite>

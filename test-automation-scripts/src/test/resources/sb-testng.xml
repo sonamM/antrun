@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+    <parameter name="testSuiteFileName" value="src/test/resources/testng.xml"/>  
+ 		<test name="Test">
+		<classes>
+		 <class name="com.etouch.fox.common.OneTest" />  
+		</classes>
+	</test>
+</suite>

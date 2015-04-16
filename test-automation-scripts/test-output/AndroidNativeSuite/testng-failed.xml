@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AndroidNativeSuite]">
+  <parameter name="testBedName" value="AndroidNative"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.etouch.cisco.common.TestCiscoMainPage">
+        <methods>
+          <include name="prepareBeforeClass"/>
+          <include name="calCostPurchaseTab" invocation-numbers="0"/>
+          <include name="printTimeTaken"/>
+          <include name="testSignIn" invocation-numbers="0"/>
+          <include name="printTimeStart"/>
+          <include name="loadConfig"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.etouch.cisco.common.TestCiscoMainPage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [AndroidNativeSuite] -->

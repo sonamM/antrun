@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ChromeSuite]">
+  <parameter name="testBedName" value="Chrome"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.etouch.fox.common.TestCiscoMainPage">
+        <methods>
+          <include name="prepareBeforeClass"/>
+          <include name="editDataCalECU"/>
+          <include name="printTimeStart"/>
+          <include name="cancelshareLeaseReport"/>
+          <include name="logoutCancel"/>
+          <include name="printTimeTaken"/>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- com.etouch.fox.common.TestCiscoMainPage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [ChromeSuite] -->

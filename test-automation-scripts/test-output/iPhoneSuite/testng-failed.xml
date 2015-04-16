@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [iPhoneSuite]">
+  <parameter name="browserName" value="iPhone"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.etouch.fox.common.editReport">
+        <methods>
+          <include name="editLeaseTabReport"/>
+          <include name="editPurchaseTab"/>
+          <include name="editLeaseTab"/>
+          <include name="editPurchaseTabReport"/>
+          <include name="editLeaseTabReportBlank"/>
+          <include name="editPurchaseTabReportBlank"/>
+          <include name="tearDown"/>
+          <include name="editPurchaseTabReportDuplicate"/>
+          <include name="editLeaseTabReportDuplicate"/>
+          <include name="editDataCalECU"/>
+        </methods>
+      </class> <!-- com.etouch.fox.common.editReport -->
+      <class name="com.etouch.fox.common.Feedback">
+        <methods>
+          <include name="feedbackMessageBlank"/>
+          <include name="feedbackRatings"/>
+          <include name="feedbackMessage"/>
+          <include name="shareReportMsg"/>
+          <include name="shareReportLeaseMsg"/>
+          <include name="tearDown"/>
+          <include name="shareReportSub"/>
+          <include name="shareReportLeaseSub"/>
+        </methods>
+      </class> <!-- com.etouch.fox.common.Feedback -->
+      <class name="com.etouch.fox.common.ECUCal">
+        <methods>
+          <include name="testBlankECU" invocation-numbers="0"/>
+          <include name="testValidECU" invocation-numbers="0"/>
+          <include name="testInvalidECU1" invocation-numbers="0"/>
+          <include name="printTimeStart"/>
+          <include name="testInvalidECU" invocation-numbers="0"/>
+          <include name="prepareBeforeClass"/>
+          <include name="printTimeTaken"/>
+          <include name="tearDown"/>
+          <include name="testMultipleECU" invocation-numbers="0"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- com.etouch.fox.common.ECUCal -->
+      <class name="com.etouch.fox.common.Login">
+        <methods>
+          <include name="printTimeStart"/>
+          <include name="printTimeTaken"/>
+          <include name="prepareBeforeClass"/>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- com.etouch.fox.common.Login -->
+      <class name="com.etouch.fox.common.LeaseTab">
+        <methods>
+          <include name="validateECULease"/>
+          <include name="invalidLease"/>
+          <include name="validatePowerLease"/>
+          <include name="validateOPEXHRLease"/>
+          <include name="validateITMLease"/>
+          <include name="blankLeasereport"/>
+          <include name="validateNFLease"/>
+          <include name="SaveDuplicateLeaseReport"/>
+          <include name="validateHWCostHR"/>
+          <include name="cancelDuplicateLeaseReport"/>
+          <include name="invalidLease2"/>
+          <include name="invalidLease1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.etouch.fox.common.LeaseTab -->
+      <class name="com.etouch.fox.common.Logout">
+        <methods>
+          <include name="logout"/>
+          <include name="logoutCancel"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.etouch.fox.common.Logout -->
+      <class name="com.etouch.fox.common.PurchaseTab">
+        <methods>
+          <include name="validateNf"/>
+          <include name="SaveDuplicateTab"/>
+          <include name="validateAIData"/>
+          <include name="validateITM"/>
+          <include name="blankPurchaseReport"/>
+          <include name="validateCAPEXHRLabel"/>
+          <include name="invalidPurchaseData1"/>
+          <include name="validateTotalECUHR"/>
+          <include name="validateCAPEXLabel"/>
+          <include name="cancelDupliacteReport"/>
+          <include name="validateOPEX"/>
+          <include name="invalidPurchaseData"/>
+          <include name="validateOPEXHR"/>
+          <include name="validatePowerLabel"/>
+          <include name="invalidPurchaseData2"/>
+          <include name="calCostPurchaseTab"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.etouch.fox.common.PurchaseTab -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [iPhoneSuite] -->

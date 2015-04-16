@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="fireFoxSuite" duration-ms="14991" started-at="2014-08-08T17:36:28Z" finished-at="2014-08-08T17:36:43Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="14991" started-at="2014-08-08T17:36:28Z" finished-at="2014-08-08T17:36:43Z">
+      <class name="com.etouch.cisco.common.TestCiscoMainPage">
+        <test-method status="PASS" signature="loadConfig()[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@1b0deb5f]" name="loadConfig" is-config="true" duration-ms="1" started-at="2014-08-08T10:36:28Z" finished-at="2014-08-08T10:36:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method status="PASS" signature="prepareBeforeClass()[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@1b0deb5f]" name="prepareBeforeClass" is-config="true" duration-ms="2583" started-at="2014-08-08T10:36:28Z" finished-at="2014-08-08T10:36:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareBeforeClass -->
+        <test-method status="FAIL" signature="testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters)[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@1b0deb5f]" name="testSignIn" duration-ms="5035" started-at="2014-08-08T10:36:31Z" data-provider="tafDataProvider" finished-at="2014-08-08T10:36:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[URL did not matched expected [https://tools.cisco.com/wsrp/pwc019/mobile/view] but found [test]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: URL did not matched expected [https://tools.cisco.com/wsrp/pwc019/mobile/view] but found [test]
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.etouch.fox.common.pages.CommonPage.logAndCreateADefect(CommonPage.java:214)
+	at com.etouch.cisco.common.TestCiscoMainPage.testSignIn(TestCiscoMainPage.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at com.etouch.taf.core.TestBedManager.executeTestNG(TestBedManager.java:124)
+	at com.etouch.cisco.common.BaseTest.exceuteTestNGFile(BaseTest.java:141)
+	at com.etouch.cisco.common.BaseTest.main(BaseTest.java:102)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignIn -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@1b0deb5f]" name="printTimeStart" is-config="true" duration-ms="0" started-at="2014-08-08T10:36:31Z" finished-at="2014-08-08T10:36:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.cisco.common.TestCiscoMainPage.testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters) throws com.etouch.taf.core.exception.PageException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@1b0deb5f]" name="printTimeTaken" is-config="true" duration-ms="0" started-at="2014-08-08T10:36:36Z" finished-at="2014-08-08T10:36:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.cisco.common.TestCiscoMainPage.testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters) throws com.etouch.taf.core.exception.PageException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@1b0deb5f]" name="printTimeStart" is-config="true" duration-ms="0" started-at="2014-08-08T10:36:36Z" finished-at="2014-08-08T10:36:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.cisco.common.TestCiscoMainPage.calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="PASS" signature="calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters)[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@1b0deb5f]" name="calCostPurchaseTab" duration-ms="7202" started-at="2014-08-08T10:36:36Z" data-provider="tafDataProvider" finished-at="2014-08-08T10:36:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.etouch.taf.core.datamanager.excel.TestParameters@264d40df]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calCostPurchaseTab -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@1b0deb5f]" name="printTimeTaken" is-config="true" duration-ms="1" started-at="2014-08-08T10:36:43Z" finished-at="2014-08-08T10:36:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.cisco.common.TestCiscoMainPage.calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@1b0deb5f]" name="tearDown" is-config="true" duration-ms="166" started-at="2014-08-08T10:36:43Z" finished-at="2014-08-08T10:36:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.etouch.cisco.common.TestCiscoMainPage -->
+    </test> <!-- Test -->
+  </suite> <!-- fireFoxSuite -->
+  <suite name="Suite" duration-ms="15218" started-at="2014-08-08T17:36:04Z" finished-at="2014-08-08T17:36:19Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="15218" started-at="2014-08-08T17:36:04Z" finished-at="2014-08-08T17:36:19Z">
+      <class name="com.etouch.cisco.common.TestCiscoMainPage">
+        <test-method status="PASS" signature="loadConfig()[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@9ac5f13]" name="loadConfig" is-config="true" duration-ms="29" started-at="2014-08-08T10:36:04Z" finished-at="2014-08-08T10:36:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method status="PASS" signature="prepareBeforeClass()[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@9ac5f13]" name="prepareBeforeClass" is-config="true" duration-ms="2557" started-at="2014-08-08T10:36:04Z" finished-at="2014-08-08T10:36:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareBeforeClass -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@9ac5f13]" name="printTimeStart" is-config="true" duration-ms="1" started-at="2014-08-08T10:36:07Z" finished-at="2014-08-08T10:36:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.cisco.common.TestCiscoMainPage.testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters) throws com.etouch.taf.core.exception.PageException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="FAIL" signature="testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters)[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@9ac5f13]" name="testSignIn" duration-ms="7013" started-at="2014-08-08T10:36:07Z" data-provider="tafDataProvider" finished-at="2014-08-08T10:36:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[URL did not matched expected [https://tools.cisco.com/wsrp/pwc019/mobile/view] but found [test]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: URL did not matched expected [https://tools.cisco.com/wsrp/pwc019/mobile/view] but found [test]
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.etouch.fox.common.pages.CommonPage.logAndCreateADefect(CommonPage.java:214)
+	at com.etouch.cisco.common.TestCiscoMainPage.testSignIn(TestCiscoMainPage.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at com.etouch.taf.core.TestBedManager.executeTestNG(TestBedManager.java:124)
+	at com.etouch.cisco.common.BaseTest.exceuteTestNGFile(BaseTest.java:141)
+	at com.etouch.cisco.common.BaseTest.main(BaseTest.java:102)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignIn -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@9ac5f13]" name="printTimeTaken" is-config="true" duration-ms="1" started-at="2014-08-08T10:36:14Z" finished-at="2014-08-08T10:36:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.cisco.common.TestCiscoMainPage.testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters) throws com.etouch.taf.core.exception.PageException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@9ac5f13]" name="printTimeStart" is-config="true" duration-ms="1" started-at="2014-08-08T10:36:14Z" finished-at="2014-08-08T10:36:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.cisco.common.TestCiscoMainPage.calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="PASS" signature="calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters)[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@9ac5f13]" name="calCostPurchaseTab" duration-ms="4654" started-at="2014-08-08T10:36:14Z" data-provider="tafDataProvider" finished-at="2014-08-08T10:36:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.etouch.taf.core.datamanager.excel.TestParameters@264d40df]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calCostPurchaseTab -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@9ac5f13]" name="printTimeTaken" is-config="true" duration-ms="0" started-at="2014-08-08T10:36:19Z" finished-at="2014-08-08T10:36:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.cisco.common.TestCiscoMainPage.calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.etouch.cisco.common.TestCiscoMainPage@9ac5f13]" name="tearDown" is-config="true" duration-ms="676" started-at="2014-08-08T10:36:19Z" finished-at="2014-08-08T10:36:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.etouch.cisco.common.TestCiscoMainPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

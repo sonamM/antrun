@@ -1,0 +1,32 @@
+10:36:19,115 INFO  [BaseTest] >.>.>.>.>.>.>.>.>.>.>.>.> Ending method 2::calCostPurchaseTab>.>.>.>.>.>.>.>.>.>.>.>.>Time Taken ::4 Seconds
+10:36:19,805 INFO  [SuiteListener] Suite Name :Suite - End
+10:36:19,805 INFO  [SuiteListener] ********Results*******
+10:36:19,806 INFO  [DriverFactory] Start - getDriver
+10:36:31,247 INFO  [BaseTest] <.<.<.<.<.<.<.<.<.<.< Starting method 1::testSignIn<.<.<.<.<.<.<.<.<.<.<
+10:36:35,339 INFO  [Rally] Start - getList
+10:36:35,340 INFO  [Rally] Querying for top highest priority unfixed defects...
+10:36:35,341 INFO  [Rally] Request Type : testcase
+10:36:35,702 INFO  [Rally] 
+Total results: 1
+10:36:35,702 INFO  [Rally] FormattedID : TC1 
+10:36:35,703 INFO  [Rally] End - getList
+10:36:35,703 INFO  [Rally] Start - getList
+10:36:35,703 INFO  [Rally] Querying for top highest priority unfixed defects...
+10:36:35,703 INFO  [Rally] Request Type : testcase
+10:36:35,984 INFO  [Rally] 
+Total results: 1
+10:36:35,984 INFO  [Rally] FormattedID : TC1 
+10:36:35,984 INFO  [Rally] End - getList
+10:36:35,984 INFO  [Rally] Start - getList
+10:36:35,984 INFO  [Rally] Querying for top highest priority unfixed defects...
+10:36:35,984 INFO  [Rally] Request Type : defect
+10:36:36,281 INFO  [Rally] 
+Total results: 2
+10:36:36,281 INFO  [Rally] ObjectID : 18259004131 State : Submitted 
+10:36:36,281 INFO  [Rally] ObjectID : 19789832206 State : Submitted 
+10:36:36,281 INFO  [Rally] End - getList
+10:36:36,282 INFO  [BaseTest] >.>.>.>.>.>.>.>.>.>.>.>.> Ending method 1::testSignIn>.>.>.>.>.>.>.>.>.>.>.>.>Time Taken ::5 Seconds
+10:36:36,283 INFO  [BaseTest] <.<.<.<.<.<.<.<.<.<.< Starting method 2::calCostPurchaseTab<.<.<.<.<.<.<.<.<.<.<
+10:36:43,486 INFO  [BaseTest] >.>.>.>.>.>.>.>.>.>.>.>.> Ending method 2::calCostPurchaseTab>.>.>.>.>.>.>.>.>.>.>.>.>Time Taken ::7 Seconds
+10:36:43,658 INFO  [SuiteListener] Suite Name :fireFoxSuite - End
+10:36:43,658 INFO  [SuiteListener] ********Results*******

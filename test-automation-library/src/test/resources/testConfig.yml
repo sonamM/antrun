@@ -1,0 +1,149 @@
+#Note: When the changes are made for this testConfig.yml, Please remember to copy changes to devConfig.yml as well
+testTypes: [Web,Mobile]
+
+xlsDataConfig:
+  'testData': '/Users/eTouch/eTaapGit/test-automation-version1/AmazonPOC/src/test/resources/testdata/cisco.xls'
+  'stageData': '/Users/eTouch/eTaapGit/test-automation-version1/AmazonPOC/src/test/resources/testdata/cisco-stage.xls'
+  
+defectConfig:
+ defectTool: Jira
+ projectId: 20974459868
+ defectOwner: /user/16693935729
+ username: 
+ password: 
+ url3: https://etouch.atlassian.net/
+ issueUrl: https://etouch.atlassian.net/rest/api/2/issue
+ keys:  ETAAPIHS
+ 
+tfsConfig:
+ collectionURL: http://tfs-na.ihs.com:8080/tfs/NA_Energy_Collection
+ userName: IHS\ULD49133
+ password: eTouch1234
+ projectName: srcold2
+ mappingServerPath: $/Pangaea/Main/Apps/Navigate/SQA/Etouchtfstest/srcold2
+ mappingLocalPath: C:\Users\QB07129167-eTouch\Desktop\lavanya\downloadproject3
+ jniNativeBaseDir: ms_tfs_redist/native
+ workspaceName: tfsWorkspace12
+ maxReconections: 3
+ 
+testngConfig:
+ listener: com.etouch.amazon.listener.SuiteListener
+ className: 
+ reporter: com.etouch.report.TestNGReporter
+
+webConfig:
+ hub: localhost
+ port: 4001
+ URL: http://www.amazon.com
+ tool: Selenium
+ testEnv: local
+ testClass: [com.etouch.amazon.pages.test.TestAmazonMainPage]
+ currentTestBeds: [InternetExplorer]
+ 
+#webConfig:
+ #hub: 54.173.15.241
+ #port: 4444
+ #URL: http://www.amazon.com
+ #tool: Selenium
+ #testEnv: remote
+ #currentTestBeds: [Chrome]
+  
+ testBeds:
+ #FireFox TestBed
+ - testBedName: Firefox
+   browser:
+    name: fireFox
+    version: 25
+    driverLocation: 
+   platform: 
+    name: Windows
+    version: 8
+ #IE10 TestBed
+ - testBedName: InternetExplorer
+   browser:
+    name: InternetExplorer
+    version: 11
+    driverLocation: /Users/sonamdeo/eTouch-local-git-latest-april2015/test-automation-version1/test-automation-library/resources/IEDriverServer.exe
+   platform: 
+    name: Windows
+    version: 8
+ #Chrome TestBed
+ - testBedName: Chrome
+   browser:
+    name: Chrome
+    version: 35
+    driverLocation: /Users/sonamdeo/eTouch-local-git-latest-april2015/test-automation-version1/test-automation-library/resources/chromedriver
+   platform: 
+    name: Windows
+    version: 8
+ #Safari TestBed
+ - testBedName: Safari
+   browser:
+    name: Safari
+    version: 2.28.0
+   platform: 
+    name: Windows
+    version: 8
+  
+#mobileConfig:
+ #hub: localhost
+ #port: 8889
+ #tool: ExperiTest
+ #testEnv: local
+ #currentTestBeds: []
+ 
+mobileConfig:
+ hub: 127.0.0.1
+ port: 4723
+ tool: Appium
+ testEnv: local
+ testClass: [com.etouch.amazon.pages.test.TestMobile]
+ currentTestBeds: []
+ 
+ testBeds:
+  #ios TestBeds
+ - testBedName: iPhoneNative
+   device:
+    name: iPhone
+    udid: b260151b7058491bd4dcd99396da691f045c1bbc
+   browser:
+    name: iPhone
+    version: 7.1
+    driverLocation: /Users/eTouch
+   platform: 
+    name: iOS
+   app:
+    appPath: /Users/eTouch/Library/Developer/Xcode/DerivedData/ideation-evvzdvaovpasljdhlrdgimxuhndo/Build/Products/Debug-iphoneos/ideation.app	 
+    bundleId: com.apple.samplecode.MapSearch
+
+  #Android TestBeds
+ - testBedName: Android
+   device:
+    name: Nexus_4.4.2_19
+    type: Emulator
+   browser:
+    name: 
+    version: 
+    driverLocation: 
+   platform: 
+    name: Android
+    version: 4.4.2
+   app:
+    appPackage: com.ihs.riginfomobile	 
+    appActivity: riginfomobile.droid.views.LoginView
+    
+   #ios TestBeds
+ - testBedName: iPhoneNative
+   device:
+    name: iPhone
+    udid: b260151b7058491bd4dcd99396da691f045c1bbc
+   browser:
+    name: iPhoneNative
+    version: 7.1
+    driverLocation: /Users/eTouch
+   platform: 
+    name: iOS
+   app:
+    appPath: /Users/eTouch/Library/Developer/Xcode/DerivedData/ideation-evvzdvaovpasljdhlrdgimxuhndo/Build/Products/Debug-iphoneos/ideation.app	 
+    bundleId: com.apple.samplecode.MapSearch
+ 

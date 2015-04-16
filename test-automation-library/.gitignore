@@ -1,0 +1,16 @@
+/target/
+/target/*
+/logs/
+/test-output/
+/test-output/*
+src/test/resources/devConfig.yml
+
+
+*.class
+*.classpath
+
+
+# Package Files #
+*.jar
+*.war
+*.ear

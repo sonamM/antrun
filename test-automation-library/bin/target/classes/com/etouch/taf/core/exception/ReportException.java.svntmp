@@ -1,0 +1,35 @@
+package com.etouch.taf.exception;
+
+import java.io.PrintWriter;
+
+/**
+ * Custom exception thrown by {@link DateUtil}.
+ * 
+ * @author eTouch Systems Corporation
+ *
+ */
+public class DateException extends Exception {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8725397299202741008L;
+	
+	private String message;
+	
+	public DateException(String message) {
+		super();
+		this.message = message;
+	}
+
+	@Override
+	public String getMessage() {
+		return message;
+	}
+
+	@Override
+	public void printStackTrace(PrintWriter s) {
+		super.printStackTrace(s);
+	}
+
+}

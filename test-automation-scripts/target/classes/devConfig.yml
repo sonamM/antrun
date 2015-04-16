@@ -1,0 +1,142 @@
+testTypes: [Web]
+defectTool: Rally
+
+testngConfig:
+ listener: com.etouch.fox.listener.SuiteListener
+ className: com.etouch.cisco.common.TestCiscoMainPage
+
+webConfig:
+ hub: localhost
+ port: 4001
+ URL: https://tools.cisco.com/wsrp/pwc019/mobile/view
+ tool: Selenium
+ currentTestBeds: [fireFox]
+
+ testBeds:
+ #FireFox TestBed
+ - testBedName: fireFox
+   browserName: fireFox
+   browserVer: 24
+   OS: Windows1
+   OSVer: 81
+ #IE10 TestBed
+ - testBedName: IE10
+   browserName: IE10
+   browserVer: 10
+   OS: Windows2
+   OSVer: 82
+   driver: C:\....
+ #Chrome TestBed
+ - testBedName: Chrome
+   browserName: Chrome
+   browserVer: 10
+   OS: Windows2
+   OSVer: 82
+   driver: C:\....
+ #Safari TestBed
+ - testBedName: Safari
+   browserName: Safari
+   browserVer: 10
+   OS: iOS
+   OSVer: 82
+   driver: C:\...
+   
+   
+mobileConfig:
+ hub: 127.0.0.1
+ port: 4723
+ tool: Appium
+ currentTestBeds: []
+ 
+ testBeds:
+  #ios TestBeds
+ - testBedName: iPhoneNative
+   deviceName: iPhone
+   browserName: iPhone
+   browserVer: 7.1.1
+   OS: iOS
+   UDID: b260151b7058491bd4dcd99396da691f045c1bbc
+   bundleID: com.cisco.ideation
+   app: /Users/eTouch/Library/Developer/Xcode/DerivedData/ideation-evvzdvaovpasljdhlrdgimxuhndo/Build/Products/Debug-iphoneos/ideation.app
+ 
+   
+ - testBedName: iPhoneNativeSim
+   deviceName: iPhone Retina (4-inch)
+   browserName: iOS
+   browserVer: 7.0.3
+   OS: iOS
+   bundleID: com.cisco.ideation
+   app: /Users/eTouch/Library/Developer/Xcode/DerivedData/ideation-evvzdvaovpasljdhlrdgimxuhndo/Build/Products/Debug-iphonesimulator/ideation.app
+ 
+   
+ - testBedName: iPhoneWeb
+   deviceName: iPhone
+   browserName: iPhone
+   browserVer: 6.1
+   OS: iOS
+   UDID: b260151b7058491bd4dcd99396da691f045c1bbc
+   bundleID: com.cisco.ideation
+   app: /Users/eTouch/Library/Developer/Xcode/DerivedData/ideation-evvzdvaovpasljdhlrdgimxuhndo/Build/Products/Debug-iphoneos/ideation.app
+   
+ - testBedName: iPhoneWebSim
+   deviceName: iPhone Simulator
+   browserName: Safari
+   browserVer: 6.1
+   OS: iOS
+   bundleID: com.cisco.ideation
+   app: Chrome
+ 
+   
+  #ios TestBed
+ - testBedName: iPadNative
+   deviceName: eTouch_device
+   browserName: iPad
+   browserVer: 7.0.6
+   OS: iOS
+   UDID: 9673388ef1cbdbb6adf1d7e319f9abf69eb3c4c4
+   bundleID: com.cisco.ideation
+   app: /Users/eTouch/Library/Developer/Xcode/DerivedData/ideation-evvzdvaovpasljdhlrdgimxuhndo/Build/Products/Debug-iphoneos/ideation.app
+ 
+ 
+ - testBedName: iPadNativeSim
+   deviceName: iPad
+   browserName: iPad
+   browserVer: 7.0.3
+   OS: iOS
+   bundleID: com.cisco.ideation
+   app: /Users/eTouch/Library/Developer/Xcode/DerivedData/ideation-evvzdvaovpasljdhlrdgimxuhndo/Build/Products/Debug-iphonesimulator/ideation.app
+ 
+ 
+ - testBedName: iPadWeb
+   deviceName: iPad
+   browserName: iPad
+   browserVer: 6.1
+   OS: iOS
+   UDID: 9673388ef1cbdbb6adf1d7e319f9abf69eb3c4c4
+   bundleID: com.cisco.ideation
+   app: /Users/eTouch/Library/Developer/Xcode/DerivedData/ideation-evvzdvaovpasljdhlrdgimxuhndo/Build/Products/Debug-iphoneos/ideation.app
+ 
+ 
+ - testBedName: iPadWebSim
+   deviceName: iPad
+   browserName: Safari
+   browserVer: 6.1
+   OS: iOS
+   UDID: 9673388ef1cbdbb6adf1d7e319f9abf69eb3c4c4
+   bundleID: com.cisco.ideation
+   app: /Users/eTouch/Library/Developer/Xcode/DerivedData/ideation-evvzdvaovpasljdhlrdgimxuhndo/Build/Products/Debug-iphonesimulator/ideation.app
+ 
+  #Android TestBed
+ - testBedName: AndroidWebEm
+   browserName: Android
+   deviceName: iOS
+   browserVer: 6.1
+   OS: iOS
+ #Android TestBed
+ - testBedName: AndroidNative
+   deviceName: Android
+   browserName: Android 
+   browserVer: 4.4
+   OS: Android
+   appActivity: com.cisco.ideation.SplashActivity
+   appPackage: com.cisco.ideation

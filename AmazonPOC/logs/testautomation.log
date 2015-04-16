@@ -1,0 +1,3 @@
+10:17:57,557 INFO  [BaseTest] >.>.>.>.>.>.>.>.>.>.>.>.> Ending method 2::testSignIn>.>.>.>.>.>.>.>.>.>.>.>.>Time Taken ::2 Seconds
+10:17:58,326 INFO  [SuiteListener] Suite Name :Chrome Suite - End
+10:17:58,326 INFO  [SuiteListener] ********Results*******

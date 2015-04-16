@@ -1,0 +1,12 @@
+test/etouch/fox/sikuli/ImagesResource.class
+test/etouch/fox/watch/TestVideoCreator.class
+test/etouch/fox/watch/TestGlobalNav.class
+test/etouch/fox/watch/TestBuzzerPageVideoLink.class
+test/etouch/fox/watch/TestNFL.class
+test/etouch/fox/watch/TestCrowdGoesWild.class
+test/etouch/fox/watch/TestFantasyFootball.class
+test/etouch/fox/watch/TestBuzzerPage.class
+test/etouch/fox/watch/TestSignInFunctionality.class
+test/etouch/fox/sikuli/TestFoxSportsVideo.class
+test/etouch/fox/json/TestJson.class
+test/etouch/fox/watch/TestCrowdGoesWildResponsivePage.class

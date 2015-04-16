@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">2 suites, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-fireFoxSuite">
+              <span class="suite-name border-failed">fireFoxSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-fireFoxSuite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-fireFoxSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-fireFoxSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-fireFoxSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-fireFoxSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-fireFoxSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-fireFoxSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-fireFoxSuite" class="hide-methods failed suite-fireFoxSuite"> (hide)</a> <!-- hide-methods failed suite-fireFoxSuite -->
+                      <a href="#" panel-name="suite-fireFoxSuite" class="show-methods failed suite-fireFoxSuite"> (show)</a> <!-- show-methods failed suite-fireFoxSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-fireFoxSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-fireFoxSuite" title="com.etouch.cisco.common.TestCiscoMainPage" hash-for-method="testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97)">testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-fireFoxSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-fireFoxSuite" class="hide-methods passed suite-fireFoxSuite"> (hide)</a> <!-- hide-methods passed suite-fireFoxSuite -->
+                      <a href="#" panel-name="suite-fireFoxSuite" class="show-methods passed suite-fireFoxSuite"> (show)</a> <!-- show-methods passed suite-fireFoxSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-fireFoxSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-fireFoxSuite" title="com.etouch.cisco.common.TestCiscoMainPage" hash-for-method="calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df)">calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-fireFoxSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.etouch.cisco.common.TestCiscoMainPage" hash-for-method="testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97)">testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.etouch.cisco.common.TestCiscoMainPage" hash-for-method="calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df)">calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-fireFoxSuite" class="panel fireFoxSuite">
+          <div class="suite-fireFoxSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.etouch.cisco.common.TestCiscoMainPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97)">
+                  </a> <!-- testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97) -->
+                  <span class="method-name">testSignIn</span>
+                  <span class="parameters">(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97)</span>
+                  <div class="stack-trace">java.lang.AssertionError: URL did not matched expected [https://tools.cisco.com/wsrp/pwc019/mobile/view] but found [test]
+	at com.etouch.fox.common.pages.CommonPage.logAndCreateADefect(CommonPage.java:214)
+	at com.etouch.cisco.common.TestCiscoMainPage.testSignIn(TestCiscoMainPage.java:139)
+	at com.etouch.taf.core.TestBedManager.executeTestNG(TestBedManager.java:124)
+	at com.etouch.cisco.common.BaseTest.exceuteTestNGFile(BaseTest.java:141)
+	at com.etouch.cisco.common.BaseTest.main(BaseTest.java:102)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-fireFoxSuite-class-failed -->
+          <div class="suite-fireFoxSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.etouch.cisco.common.TestCiscoMainPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df)">
+                  </a> <!-- calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df) -->
+                  <span class="method-name">calCostPurchaseTab</span>
+                  <span class="parameters">(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-fireFoxSuite-class-passed -->
+        </div> <!-- panel fireFoxSuite -->
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.etouch.cisco.common.TestCiscoMainPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97)">
+                  </a> <!-- testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97) -->
+                  <span class="method-name">testSignIn</span>
+                  <span class="parameters">(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97)</span>
+                  <div class="stack-trace">java.lang.AssertionError: URL did not matched expected [https://tools.cisco.com/wsrp/pwc019/mobile/view] but found [test]
+	at com.etouch.fox.common.pages.CommonPage.logAndCreateADefect(CommonPage.java:214)
+	at com.etouch.cisco.common.TestCiscoMainPage.testSignIn(TestCiscoMainPage.java:139)
+	at com.etouch.taf.core.TestBedManager.executeTestNG(TestBedManager.java:124)
+	at com.etouch.cisco.common.BaseTest.exceuteTestNGFile(BaseTest.java:141)
+	at com.etouch.cisco.common.BaseTest.main(BaseTest.java:102)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.etouch.cisco.common.TestCiscoMainPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df)">
+                  </a> <!-- calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df) -->
+                  <span class="method-name">calCostPurchaseTab</span>
+                  <span class="parameters">(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-fireFoxSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;fireFoxSuite&quot;&gt;
+  &lt;parameter name=&quot;testBedName&quot; value=&quot;fireFox&quot;/&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.etouch.cisco.common.TestCiscoMainPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- fireFoxSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/eTouch/git/test-automation/test-automation-scripts/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
+  &lt;parameter name=&quot;testBedName&quot; value=&quot;Chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.etouch.fox.listener.SuiteListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.etouch.cisco.common.TestCiscoMainPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-fireFoxSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for fireFoxSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-fireFoxSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for fireFoxSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-fireFoxSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for fireFoxSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_fireFoxSuite');
+function tableData_fireFoxSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'calCostPurchaseTab')
+data.setCell(0, 2, 'com.etouch.cisco.common.TestCiscoMainPage')
+data.setCell(0, 3, 7202);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testSignIn')
+data.setCell(1, 2, 'com.etouch.cisco.common.TestCiscoMainPage')
+data.setCell(1, 3, 5035);
+window.suiteTableData['fireFoxSuite']= { tableData: data, tableDiv: 'times-div-fireFoxSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <div id="times-div-fireFoxSuite">
+              </div> <!-- times-div-fireFoxSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testSignIn')
+data.setCell(0, 2, 'com.etouch.cisco.common.TestCiscoMainPage')
+data.setCell(0, 3, 7013);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'calCostPurchaseTab')
+data.setCell(1, 2, 'com.etouch.cisco.common.TestCiscoMainPage')
+data.setCell(1, 3, 4654);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-fireFoxSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for fireFoxSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-fireFoxSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-fireFoxSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.etouch.cisco.common.TestCiscoMainPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loadConfig</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">prepareBeforeClass</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">printTimeStart(public void com.etouch.cisco.common.TestCiscoMainPage.testSignIn(com.etouch.taf.core.datamanager.exc...)</span>
+                <span class="method-start">2862 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97)</span>
+                <span class="method-start">2863 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">printTimeTaken(public void com.etouch.cisco.common.TestCiscoMainPage.testSignIn(com.etouch.taf.core.datamanager.exc...)</span>
+                <span class="method-start">9876 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">printTimeStart(public void com.etouch.cisco.common.TestCiscoMainPage.calCostPurchaseTab(com.etouch.taf.core.dataman...)</span>
+                <span class="method-start">9877 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df)</span>
+                <span class="method-start">9878 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">printTimeTaken(public void com.etouch.cisco.common.TestCiscoMainPage.calCostPurchaseTab(com.etouch.taf.core.dataman...)</span>
+                <span class="method-start">14532 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14533 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class before">
+                <span class="method-name">loadConfig</span>
+                <span class="method-start">24079 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">prepareBeforeClass</span>
+                <span class="method-start">24080 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">printTimeStart(public void com.etouch.cisco.common.TestCiscoMainPage.testSignIn(com.etouch.taf.core.datamanager.exc...)</span>
+                <span class="method-start">26664 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97)</span>
+                <span class="method-start">26664 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">printTimeTaken(public void com.etouch.cisco.common.TestCiscoMainPage.testSignIn(com.etouch.taf.core.datamanager.exc...)</span>
+                <span class="method-start">31699 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df)</span>
+                <span class="method-start">31700 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">printTimeStart(public void com.etouch.cisco.common.TestCiscoMainPage.calCostPurchaseTab(com.etouch.taf.core.dataman...)</span>
+                <span class="method-start">31700 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">printTimeTaken(public void com.etouch.cisco.common.TestCiscoMainPage.calCostPurchaseTab(com.etouch.taf.core.dataman...)</span>
+                <span class="method-start">38902 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38903 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.etouch.cisco.common.TestCiscoMainPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loadConfig</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">prepareBeforeClass</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">printTimeStart(public void com.etouch.cisco.common.TestCiscoMainPage.testSignIn(com.etouch.taf.core.datamanager.exc...)</span>
+                <span class="method-start">2862 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97)</span>
+                <span class="method-start">2863 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">printTimeTaken(public void com.etouch.cisco.common.TestCiscoMainPage.testSignIn(com.etouch.taf.core.datamanager.exc...)</span>
+                <span class="method-start">9876 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">printTimeStart(public void com.etouch.cisco.common.TestCiscoMainPage.calCostPurchaseTab(com.etouch.taf.core.dataman...)</span>
+                <span class="method-start">9877 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df)</span>
+                <span class="method-start">9878 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">printTimeTaken(public void com.etouch.cisco.common.TestCiscoMainPage.calCostPurchaseTab(com.etouch.taf.core.dataman...)</span>
+                <span class="method-start">14532 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14533 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class before">
+                <span class="method-name">loadConfig</span>
+                <span class="method-start">24079 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">prepareBeforeClass</span>
+                <span class="method-start">24080 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">printTimeStart(public void com.etouch.cisco.common.TestCiscoMainPage.testSignIn(com.etouch.taf.core.datamanager.exc...)</span>
+                <span class="method-start">26664 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSignIn(com.etouch.taf.core.datamanager.excel.TestParameters@1efd9b97)</span>
+                <span class="method-start">26664 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">printTimeTaken(public void com.etouch.cisco.common.TestCiscoMainPage.testSignIn(com.etouch.taf.core.datamanager.exc...)</span>
+                <span class="method-start">31699 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">calCostPurchaseTab(com.etouch.taf.core.datamanager.excel.TestParameters@264d40df)</span>
+                <span class="method-start">31700 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">printTimeStart(public void com.etouch.cisco.common.TestCiscoMainPage.calCostPurchaseTab(com.etouch.taf.core.dataman...)</span>
+                <span class="method-start">31700 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">printTimeTaken(public void com.etouch.cisco.common.TestCiscoMainPage.calCostPurchaseTab(com.etouch.taf.core.dataman...)</span>
+                <span class="method-start">38902 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38903 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
